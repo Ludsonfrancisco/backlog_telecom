@@ -8,6 +8,7 @@ st.set_page_config(
     layout='wide'
 )
 
+
 pasta = Path('datasets')
 item = os.listdir(pasta)
 caminho = (f'{pasta}/{item[0]}')
@@ -41,10 +42,7 @@ df_tecnoligia_filtro2 = df_status_filtro1[df_status_filtro1['PHYSICAL_LINK_MEDIA
 col_preventiva = df_tecnoligia_filtro2['DETAIL'].unique()
 
 
-
-
 col1, col2, col3 = st.columns(3)
-
 
 
 soma_da_coluna = df_tecnoligia_filtro2['CITY'].value_counts().sum()
