@@ -45,6 +45,7 @@ col_preventiva = df_tecnoligia_filtro2['DETAIL'].unique()
 col1, col2, col3 = st.columns(3)
 
 
+
 soma_da_coluna = df_tecnoligia_filtro2['CITY'].value_counts().sum()
 col2.subheader(f'{soma_da_coluna} - BACKLOG GERAL')
 
